@@ -14,7 +14,7 @@ Data Exploration: This step involved exploring each variable in the data set. Th
 
 Data Preparation: Developed strategies for imputing missing values, dropping variables because of collinearity and dealing with messy data. For example, multiple variables had 0's as a value and there were many spelling errors. 
 
-Creating Data and Model Pipelines: I created two data pipelines, one for transforming numerical variables and the other for categorical data. The data pipelines were then fed into model pipelines, which enabled me to try multiple models without having to write redundant code. 
+Creating Data Pipelines: I created two data pipelines, one for transforming numerical variables and the other for categorical data. The data pipelines were then fed into model pipelines, which enabled me to try multiple models without having to write redundant code. 
 
 Model deployment and selection: Water wells are in three classifications, funtional, non functional and functional but needing repair. I chose classification models, specifically Logistic regression, Decision trees, Random forests, KNN models and XGBoost. Models were refined using hyperparameter tuning techniques to find the most accurate model while reducing over fitting. 
 
