@@ -1,13 +1,13 @@
-# ** Tanzanian-Water-Well-Classification**
+# Tanzanian-Water-Well-Classification
 
 This project is for the Tanzanian water wells classification challenge. The stakeholder is the Tanzanian goverment, who wants to know how to correctly classify funtioning water wells. 
 
-# **Data Collection:**
+# Data Collection:
 
 The data is given by Driven data: 
 https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/
 
-#**Methodology**
+# Methodology
 My approach to addressing the problem at hand was comprised of four distinct components: Data exploration, data preparation, creating data pipelines and model deployment/selection.
 
 Data Exploration: This step involved exploring each variable in the data set. Their types, value ranges, distributions and if they were missing values.
@@ -20,7 +20,7 @@ Model deployment and selection: Water wells are in three classifications, funtio
 
 Visual Presentation: I used visuals throughout the project, from initially exploring how the variables related to classifying water wells and displaying the results of the models. I have included them at the end of this file.
 
-#**Data Exploration:** 
+# Data Exploration: 
 Water wells are in three categories:
 
 Funtional: 53.62 %
@@ -49,7 +49,7 @@ public_meeting:     5055
 permit:             17492
 construction_year:  20709
 
-#**Data Cleaning**
+# Data Cleaning
 
 Variables with similar or duplicate data:
 
@@ -71,13 +71,13 @@ Quantity and quantity_group are identical.
 
 Funder and Installer had many spelling errors for institutions which needed to be corrected.
 
-#**Inputting missing data**
+# Inputting missing data
 
 Numerical data: amount_tsh, latitude and longitude, population and construction_year were all variables I used in the models. I chose to use to impute the median because it is not as sensitive as the mean and the data has a big range in values.
 
 Categorical data: The majority of the variables in the data set were categorial and I chose to use the most frequent value to impute missing values.
 
-#**Creating Model pipelines**
+# Creating Model pipelines
 
 The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predictive power of the models. The result of the best model is as follows:
 
@@ -142,7 +142,7 @@ Base Desicion Tree:
 ![BaseDesicion2Class](https://user-images.githubusercontent.com/115169255/211093931-6a992501-241c-4741-9c9d-920c3c5c030b.png)
 
 
-#**Data Visuals:**
+# Data Visuals:
 
 ![Water Pump Status](https://user-images.githubusercontent.com/115169255/211094553-9f8042e2-c2bb-49c4-9665-422f2d2d97b6.png)
 
