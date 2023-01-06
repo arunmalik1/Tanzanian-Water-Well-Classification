@@ -78,30 +78,38 @@ Categorical data: The majority of the variables in the data set were categorial 
 
 **Creating Model pipelines**
 
-The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predcited power of the models. The results of the best model is as follows:
+The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predictive power of the models. The results of the best model is as follows:
 
-Best Model was Base desicion tree with SMOTE:
-Accuracy is :75
-      precision    recall  f1-score   support
+Best Model was Base desicion tree with SMOTE: Accuracy score was 75
 
-0       0.81      0.77      0.79      4784
-1       0.36      0.47      0.41       676
-2       0.77      0.78      0.77      3379
 
 
 ![BestConfusionMatrix](https://user-images.githubusercontent.com/115169255/211086917-acf6139a-2ebb-429b-a72f-2249f67ed95c.png)
 
 
 
-Logistic regression with SMOTE:
-The score of the model is: 65 
+Logistic regression with SMOTE: Accuracy score was 65
+
+![LogisticSmote](https://user-images.githubusercontent.com/115169255/211089263-68eb9d95-725f-49e7-8e0c-351f72bd2fe8.png)
+
+
+
+
+Logitic regression with UnderSampler: Accuracy score was 65
+
+
+
+![LogisticUnderSampler](https://user-images.githubusercontent.com/115169255/211089293-4deb9893-2c06-41be-b4b1-f2b314dc047d.png)
 
 
 
 
 
-Logitic regression with UnderSampler:
-The score of the model is: 65
+
+
+
+
+Base desicion tree with UnderSampler: Accuracy score was 65
 
 
 
@@ -109,23 +117,4 @@ The score of the model is: 65
 
 
 
-
-
-
-
-
-Base desicion tree with UnderSampler:
-Model Accuracy:65
-
-       precision    recall  f1-score   support
-
-0       0.81      0.61      0.69      4784
-1       0.23      0.65      0.34       676
-2       0.73      0.72      0.72      3379
-
-
-
-
-
-Decision Tree with calculated parameters and SMOTE:
-Model Accuracy: 68
+Decision Tree with calculated parameters and SMOTE: Accuracy score was 68
