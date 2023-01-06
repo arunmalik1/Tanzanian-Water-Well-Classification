@@ -88,7 +88,7 @@ The model was able to predict functioning water wells and wells that need repair
 ![BestXGBoost](https://user-images.githubusercontent.com/115169255/211090892-83c3724b-f674-438d-b522-dfa2acf6ab73.png)
 
 
-Other Models:
+**Other Models:**
 
 
 Logistic regression with SMOTE: Accuracy score 65%
