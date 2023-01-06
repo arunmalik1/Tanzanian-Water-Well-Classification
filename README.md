@@ -18,7 +18,7 @@ Creating Data Pipelines: I created two data pipelines, one for transforming nume
 
 Model deployment and selection: Water wells are in three classifications, funtional, non functional and functional but needing repair. I chose classification models, specifically Logistic regression, Decision trees, Random forests, KNN models and XGBoost. Models were refined using hyperparameter tuning techniques to find the most accurate model while reducing over fitting. 
 
-Visual Presentation: I used visuals throughout the project, from initially exploring how the variables related to classifying water wells and displaying the results of the models.
+Visual Presentation: I used visuals throughout the project, from initially exploring how the variables related to classifying water wells and displaying the results of the models. I have included them at the end of this file.
 
 **Data Exploration:** 
 Water wells are in three categories:
@@ -140,5 +140,29 @@ Logistic Regression: Accuracy 78%
 Base Desicion Tree: 
 
 ![BaseDesicion2Class](https://user-images.githubusercontent.com/115169255/211093931-6a992501-241c-4741-9c9d-920c3c5c030b.png)
+
+
+**Data Visuals:**
+
+![Water Pump Status](https://user-images.githubusercontent.com/115169255/211094553-9f8042e2-c2bb-49c4-9665-422f2d2d97b6.png)
+
+
+
+
+![Top10Funders](https://user-images.githubusercontent.com/115169255/211094520-9baab239-907b-4afe-af1d-51d483219bd8.png)
+
+
+
+
+![Top10Installers](https://user-images.githubusercontent.com/115169255/211094527-3b16713f-8129-4d5a-a9f0-dde911f5aa52.png)
+
+![Water Quality](https://user-images.githubusercontent.com/115169255/211094585-341b4490-4a28-4e37-bdef-c3cfceb76bb2.png)
+
+
+
+![Water Quantity](https://user-images.githubusercontent.com/115169255/211094588-b53c43eb-915b-4279-b17b-f898e559a7b3.png)
+
+
+![Water source](https://user-images.githubusercontent.com/115169255/211094591-9e2bf7c3-9368-46ac-9006-921b76b69af8.png)
 
 
