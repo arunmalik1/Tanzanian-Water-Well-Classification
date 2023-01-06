@@ -60,25 +60,25 @@ Extraction_type, extraction_type_group and extraction_type_class are all extract
 
 Management and management_group tell us who manages the water well. I chose management because it has more granular data. 
 
-Payment and payment_type are identical.
-
 Water_quality and quality_group are also very similar. I chose quality_group 
 
-Quantity and quantity_group are identical. 
-
 Source, source_type and source_class are closely realted. I chose source because it has less unknowns.
+
+Payment and payment_type are identical.
+
+Quantity and quantity_group are identical. 
 
 Funder and Installer had many spelling errors for institutions which needed to be corrected.
 
 **Imputting missing data**
 
-Numerical data: amount_tsh, latitude and longitude, polpulation and construction_year were all variables I used in the models. I chose to use to impute the median because it is not as sensative as the mean.
+Numerical data: amount_tsh, latitude and longitude, polpulation and construction_year were all variables I used in the models. I chose to use to impute the median because it is not as sensative as the mean and the data has a big range in values.
 
 Categorical data: The majority of the variables in the data set were categorial and I chose to use the most frequent value to impute missing values.
 
 **Creating Model pipelines**
 
-The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predcited power of the models. The results of the models are as follows:
+The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predcited power of the models. The results of the best model is as follows:
 
 Best Model was Base desicion tree with SMOTE:
 Accuracy is :75
@@ -88,6 +88,8 @@ Accuracy is :75
 1       0.36      0.47      0.41       676
 2       0.77      0.78      0.77      3379
 
+
+![BestConfusionMatrix](https://user-images.githubusercontent.com/115169255/211086917-acf6139a-2ebb-429b-a72f-2249f67ed95c.png)
 
 
 
