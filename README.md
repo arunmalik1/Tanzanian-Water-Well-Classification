@@ -2,6 +2,10 @@
 
 This project is for the Tanzanian water wells classification challenge. The stakeholder is the Tanzanian goverment, who wants to know how to correctly classify funtioning water wells. 
 
+**Data Collection:**
+The data is given by Driven data: 
+https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/
+
 **Methodology**
 My approach to addressing the problem at hand was comprised of four distinct components: Data exploration, data preparation, creating modeling pipelines and model deployment/selection.
 
@@ -70,9 +74,56 @@ Funder and Installer had many spelling errors for institutions which needed to b
 
 Numerical data: amount_tsh, latitude and longitude, polpulation and construction_year were all variables I used in the models. I chose to use to impute the median because it is not as sensative as the mean.
 
-Categorical data: 
+Categorical data: The majority of the variables in the data set were categorial and I chose to use the most frequent value to impute missing values.
+
+**Creating Model pipelines**
+
+The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predcited power of the models. The results of the models are as follows:
+
+Best Model was Base desicion tree with SMOTE:
+Accuracy is :75
+      precision    recall  f1-score   support
+
+0       0.81      0.77      0.79      4784
+1       0.36      0.47      0.41       676
+2       0.77      0.78      0.77      3379
+
+
+
+
+Logistic regression with SMOTE:
+The score of the model is: 65 
 
 
 
 
 
+Logitic regression with UnderSampler:
+The score of the model is: 65
+
+
+
+
+
+
+
+
+
+
+
+
+Base desicion tree with UnderSampler:
+Model Accuracy:65
+
+       precision    recall  f1-score   support
+
+0       0.81      0.61      0.69      4784
+1       0.23      0.65      0.34       676
+2       0.73      0.72      0.72      3379
+
+
+
+
+
+Decision Tree with calculated parameters and SMOTE:
+Model Accuracy: 68
