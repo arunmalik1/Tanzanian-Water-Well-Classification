@@ -3,21 +3,22 @@
 This project is for the Tanzanian water wells classification challenge. The stakeholder is the Tanzanian goverment, who wants to know how to correctly classify funtioning water wells. 
 
 **Data Collection:**
+
 The data is given by Driven data: 
 https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/
 
 **Methodology**
-My approach to addressing the problem at hand was comprised of four distinct components: Data exploration, data preparation, creating modeling pipelines and model deployment/selection.
+My approach to addressing the problem at hand was comprised of four distinct components: Data exploration, data preparation, creating data pipelines and model deployment/selection.
 
-Data Exploration: This step involved exploring each varialbe in the data set. Thier types, value ranges, distributions and if they were missing values.
+Data Exploration: This step involved exploring each variable in the data set. Their types, value ranges, distributions and if they were missing values.
 
 Data Preparation: Developed strategies for imputing missing values, dropping variables because of collinearity and dealing with messy data. For example, multiple variables had 0's as a value and there were many spelling errors. 
 
 Creating Data and Model Pipelines: I created two data pipelines, one for transforming numerical variables and the other for categorical data. The data pipelines were then fed into model pipelines, which enabled me to try multiple models without having to write redundant code. 
 
-Model deployment and selection: Water wells are in three classifications, funtional, non functional and funtional but needing repair. I chose classification models, specifically Logistic regression, Desicion trees, Random forests, KNN models and XGBoost. Models were refined using hyperparameter tuning techniques in order to find the most accurate model while reducing over fitting. 
+Model deployment and selection: Water wells are in three classifications, funtional, non functional and functional but needing repair. I chose classification models, specifically Logistic regression, Decision trees, Random forests, KNN models and XGBoost. Models were refined using hyperparameter tuning techniques to find the most accurate model while reducing over fitting. 
 
-Visual Presentation: I used visuals throughout the project, from initally exploring how the variables related to classifying water wells and diplaying the results of the models.
+Visual Presentation: I used visuals throughout the project, from initially exploring how the variables related to classifying water wells and displaying the results of the models.
 
 **Data Exploration:** 
 Water wells are in three categories:
@@ -54,7 +55,7 @@ Variables with similar or duplicate data:
 
 Basin, subvillage, region, region code, district_code, lga and ward are all variables given to determine geographic location. I chose to keep region code and district_code because they are numerical. I chose region because I wanted the names of regions and the variables didn't contain any null or 0's as a value. 
 
-Scheme_management and scheme_name are data for who operates the waterpoint. I chose to use scheme_management because it has more comeplete data.
+Scheme_management and scheme_name are data for who operates the waterpoint. I chose to use scheme_management because it has more complete data.
 
 Extraction_type, extraction_type_group and extraction_type_class are all extraction methods. I chose extraction_type because it has the most granular data. 
 
@@ -62,7 +63,7 @@ Management and management_group tell us who manages the water well. I chose mana
 
 Water_quality and quality_group are also very similar. I chose quality_group 
 
-Source, source_type and source_class are closely realted. I chose source because it has less unknowns.
+Source, source_type and source_class are closely related. I chose source because it has fewer unknowns.
 
 Payment and payment_type are identical.
 
@@ -70,19 +71,25 @@ Quantity and quantity_group are identical.
 
 Funder and Installer had many spelling errors for institutions which needed to be corrected.
 
-**Imputting missing data**
+**Inputting missing data**
 
-Numerical data: amount_tsh, latitude and longitude, polpulation and construction_year were all variables I used in the models. I chose to use to impute the median because it is not as sensative as the mean and the data has a big range in values.
+Numerical data: amount_tsh, latitude and longitude, population and construction_year were all variables I used in the models. I chose to use to impute the median because it is not as sensitive as the mean and the data has a big range in values.
 
 Categorical data: The majority of the variables in the data set were categorial and I chose to use the most frequent value to impute missing values.
 
 **Creating Model pipelines**
 
-The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predictive power of the models. The results of the best model is as follows:
+The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predictive power of the models. The result of the best model is as follows:
 
 Best Model was A tuned XGBoost Model: Accuracy 78.76%
 
+The model was able to predict functioning water wells and wells that need repair fairly well. It struggled with non functional wells.
+
 ![BestXGBoost](https://user-images.githubusercontent.com/115169255/211090892-83c3724b-f674-438d-b522-dfa2acf6ab73.png)
+
+
+Other Models:
+
 
 Logistic regression with SMOTE: Accuracy score 65%
 
@@ -120,5 +127,18 @@ XGBoost: Accuracy 75%
 
 ![Base XGBoost](https://user-images.githubusercontent.com/115169255/211090564-9d9abeba-34cb-4755-bdc5-8abe1fcd911c.png)
 
+
+**Two Class Models:**
+
+I combined wells that need repair and non funtioning wells as a category and reran the models. They did have higher accuracy scores, however I did not choose them as the best models because it was not the intent of the original problem.
+
+Logistic Regression: Accuracy 78%
+
+![Logistic2Class](https://user-images.githubusercontent.com/115169255/211093805-78ca2ae8-d4d4-4b89-80a1-eaf21156f684.png)
+
+
+Base Desicion Tree: 
+
+![BaseDesicion2Class](https://user-images.githubusercontent.com/115169255/211093931-6a992501-241c-4741-9c9d-920c3c5c030b.png)
 
 
