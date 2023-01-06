@@ -1,8 +1,8 @@
-**# Tanzanian-Water-Well-Classification**
+# **# Tanzanian-Water-Well-Classification**
 
 This project is for the Tanzanian water wells classification challenge. The stakeholder is the Tanzanian goverment, who wants to know how to correctly classify funtioning water wells. 
 
-**Data Collection:**
+# **Data Collection:**
 
 The data is given by Driven data: 
 https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/
