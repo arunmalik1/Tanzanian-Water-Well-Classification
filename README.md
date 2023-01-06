@@ -80,41 +80,45 @@ Categorical data: The majority of the variables in the data set were categorial 
 
 The data is imbalanced so I chose SMOTE and Random Class Under Sampler techniques to improve the predictive power of the models. The results of the best model is as follows:
 
-Best Model was Base desicion tree with SMOTE: Accuracy score was 75
+Best Model was A tuned XGBoost Model: Accuracy 78.76%
 
+![BestXGBoost](https://user-images.githubusercontent.com/115169255/211090892-83c3724b-f674-438d-b522-dfa2acf6ab73.png)
 
-
-![BestConfusionMatrix](https://user-images.githubusercontent.com/115169255/211086917-acf6139a-2ebb-429b-a72f-2249f67ed95c.png)
-
-
-
-Logistic regression with SMOTE: Accuracy score was 65
+Logistic regression with SMOTE: Accuracy score 65%
 
 ![LogisticSmote](https://user-images.githubusercontent.com/115169255/211089263-68eb9d95-725f-49e7-8e0c-351f72bd2fe8.png)
 
 
-
-
-Logitic regression with UnderSampler: Accuracy score was 65
-
-
+Logitic regression with UnderSampler: Accuracy score 65%
 
 ![LogisticUnderSampler](https://user-images.githubusercontent.com/115169255/211089293-4deb9893-2c06-41be-b4b1-f2b314dc047d.png)
 
 
+Base desicion tree with SMOTE: Accuracy score 75%
+
+![BaseDesicionTree](https://user-images.githubusercontent.com/115169255/211091325-3774ed8f-e940-4dac-9073-9820f7f8d669.png)
+
+
+Base desicion tree with UnderSampler: Accuracy score 65 %
+
+![BaseDesicionUnderSampler](https://user-images.githubusercontent.com/115169255/211089898-03da7103-f6fe-4856-833d-665bbd7e7276.png)
+
+
+Decision Tree with calculated parameters and SMOTE: Accuracy score 68%
+
+![DecisionSmoteParameters](https://user-images.githubusercontent.com/115169255/211090005-f3f1d6de-7cdc-406e-b46c-9f93ffda0cad.png)
+
+Random Forest: Accuracy score 70%
+
+![RandomForest](https://user-images.githubusercontent.com/115169255/211090148-72de6206-6c4e-45e8-a37a-001fa6f32809.png)
+
+KNN Classification: Accuracy score 70%
+
+![KNN](https://user-images.githubusercontent.com/115169255/211090373-d72b05f5-d850-481d-a851-5f915c898a14.png)
+
+XGBoost: Accuracy 75%
+
+![Base XGBoost](https://user-images.githubusercontent.com/115169255/211090564-9d9abeba-34cb-4755-bdc5-8abe1fcd911c.png)
 
 
 
-
-
-
-
-Base desicion tree with UnderSampler: Accuracy score was 65
-
-
-
-
-
-
-
-Decision Tree with calculated parameters and SMOTE: Accuracy score was 68
